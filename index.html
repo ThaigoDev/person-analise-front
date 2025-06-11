@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Estilo Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Descubra Seu Estilo Autêntico</h1>
+            <p>Responda algumas perguntas e receba uma análise personalizada.</p>
+        </header>
+
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <main class="content-area">
+            <section id="formulario-perguntas" class="form-section active">
+                <form id="form-analise">
+                    <div class="slides-wrapper">
+                        <div class="slide current">
+                            <div class="question-card">
+                                <h3 class="question-title"><span class="step-number">1</span> Personalidade e Estilo de Vida <i class="fas fa-user-tie"></i></h3>
+                                <div class="form-group">
+                                    <label for="descricao">Como você se descreveria em poucas palavras?</label>
+                                    <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: Criativa, prática, divertida..." required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Você prefere ambientes:</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="urbanos" name="ambiente" value="Urbanos" required> <label for="urbanos">Urbanos</label>
+                                        <input type="radio" id="naturais" name="ambiente" value="Naturais"> <label for="naturais">Naturais</label>
+                                        <input type="radio" id="classicos" name="ambiente" value="Clássicos"> <label for="classicos">Clássicos</label>
+                                        <input type="radio" id="criativos" name="ambiente" value="Criativos/descontraídos"> <label for="criativos">Criativos</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Sua personalidade é mais:</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="extrovertida" name="personalidade" value="Extrovertida" required> <label for="extrovertida">Extrovertida</label>
+                                        <input type="radio" id="introvertida" name="personalidade" value="Introvertida"> <label for="introvertida">Introvertida</label>
+                                        <input type="radio" id="equilibrada" name="personalidade" value="Equilibrada"> <label for="equilibrada">Equilibrada</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Como é seu estilo de vida?</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="agitado" name="estilo_vida" value="Agitado e urbano" required> <label for="agitado">Agitado e urbano</label>
+                                        <input type="radio" id="tranquilo" name="estilo_vida" value="Tranquilo e introspectivo"> <label for="tranquilo">Tranquilo e introspectivo</label>
+                                        <input type="radio" id="versatil" name="estilo_vida" value="Equilibrado e versátil"> <label for="versatil">Equilibrado e versátil</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Quais são seus hobbies/interesses? (escolha um ou mais)</label>
+                                    <div class="checkbox-options">
+                                        <input type="checkbox" id="musica" name="hobbies" value="Música"> <label for="musica">Música</label>
+                                        <input type="checkbox" id="leitura" name="hobbies" value="Leitura"> <label for="leitura">Leitura</label>
+                                        <input type="checkbox" id="academia" name="hobbies" value="Academia"> <label for="academia">Academia</label>
+                                        <input type="checkbox" id="tecnologia" name="hobbies" value="Tecnologia"> <label for="tecnologia">Tecnologia</label>
+                                        <input type="checkbox" id="moda" name="hobbies" value="Moda"> <label for="moda">Moda</label>
+                                        <input type="checkbox" id="natureza" name="hobbies" value="Natureza"> <label for="natureza">Natureza</label>
+                                        <input type="checkbox" id="cinema" name="hobbies" value="Cinema/Séries"> <label for="cinema">Cinema/Séries</label>
+                                        <input type="checkbox" id="culinaria" name="hobbies" value="Culinária"> <label for="culinaria">Culinária</label>
+                                        <input type="checkbox" id="viagens" name="hobbies" value="Viagens"> <label for="viagens">Viagens</label>
+                                        <input type="checkbox" id="jogos" name="hobbies" value="Jogos"> <label for="jogos">Jogos</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="question-card">
+                                <h3 class="question-title"><span class="step-number">2</span> Preferência de Estilo <i class="fas fa-tshirt"></i></h3>
+                                <div class="form-group">
+                                    <label>Quais desses estilos você mais se identifica? (escolha um ou mais)</label>
+                                    <div class="checkbox-options">
+                                        <input type="checkbox" id="casual" name="estilos_identificacao" value="Casual"> <label for="casual">Casual</label>
+                                        <input type="checkbox" id="classico" name="estilos_identificacao" value="Clássico"> <label for="classico">Clássico</label>
+                                        <input type="checkbox" id="moderno" name="estilos_identificacao" value="Moderno"> <label for="moderno">Moderno</label>
+                                        <input type="checkbox" id="urbano" name="estilos_identificacao" value="Urbano/Street"> <label for="urbano">Urbano/Street</label>
+                                        <input type="checkbox" id="minimalista" name="estilos_identificacao" value="Minimalista"> <label for="minimalista">Minimalista</label>
+                                        <input type="checkbox" id="criativo" name="estilos_identificacao" value="Criativo/alternativo"> <label for="criativo">Criativo</label>
+                                        <input type="checkbox" id="elegante" name="estilos_identificacao" value="Elegante"> <label for="elegante">Elegante</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Qual seu nível de ousadia ao se vestir?</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="discreto" name="ousadia_vestir" value="Discreto" required> <label for="discreto">Discreto</label>
+                                        <input type="radio" id="equilibrado-ousadia" name="ousadia_vestir" value="Equilibrado"> <label for="equilibrado-ousadia">Equilibrado</label>
+                                        <input type="radio" id="ousado" name="ousadia_vestir" value="Ousado"> <label for="ousado">Ousado</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="question-card">
+                                <h3 class="question-title"><span class="step-number">3</span> Cores e Estampas <i class="fas fa-palette"></i></h3>
+                                <div class="form-group">
+                                    <label>Você prefere cores mais: (escolha um ou mais)</label>
+                                    <div class="checkbox-options">
+                                        <input type="checkbox" id="neutras" name="preferencia_cores" value="Neutras"> <label for="neutras">Neutras</label>
+                                        <input type="checkbox" id="terrosas" name="preferencia_cores" value="Terrosas"> <label for="terrosas">Terrosas</label>
+                                        <input type="checkbox" id="vibrantes" name="preferencia_cores" value="Vibrantes"> <label for="vibrantes">Vibrantes</label>
+                                        <input type="checkbox" id="escuras" name="preferencia_cores" value="Escuras"> <label for="escuras">Escuras</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Quais dessas estampas você curte mais?</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="liso" name="estampas" value="Liso" required> <label for="liso">Liso</label>
+                                        <input type="radio" id="listrado" name="estampas" value="Listrado"> <label for="listrado">Listrado</label>
+                                        <input type="radio" id="xadrez" name="estampas" value="Xadrez"> <label for="xadrez">Xadrez</label>
+                                        <input type="radio" id="floral" name="estampas" value="Floral"> <label for="floral">Floral</label>
+                                        <input type="radio" id="nenhum-estampa" name="estampas" value="Nenhum"> <label for="nenhum-estampa">Nenhuma</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="question-card">
+                                <h3 class="question-title"><span class="step-number">4</span> Clima e Ocasião <i class="fas fa-cloud-sun"></i></h3>
+                                <div class="form-group">
+                                    <label>Você mora em um lugar com clima:</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="frio" name="clima_local" value="Frio" required> <label for="frio">Frio</label>
+                                        <input type="radio" id="quente" name="clima_local" value="Quente"> <label for="quente">Quente</label>
+                                        <input type="radio" id="equilibrado-clima" name="clima_local" value="Equilibrado"> <label for="equilibrado-clima">Equilibrado</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Para qual tipo de ocasião você quer recomendações? (pode escolher mais de um)</label>
+                                    <div class="checkbox-options">
+                                        <input type="checkbox" id="dia-a-dia" name="ocasioes_recomendacao" value="Dia a dia"> <label for="dia-a-dia">Dia a dia</label>
+                                        <input type="checkbox" id="trabalho" name="ocasioes_recomendacao" value="Trabalho"> <label for="trabalho">Trabalho</label>
+                                        <input type="checkbox" id="eventos" name="ocasioes_recomendacao" value="Eventos sociais"> <label for="eventos">Eventos sociais</label>
+                                        <input type="checkbox" id="encontros" name="ocasioes_recomendacao" value="Encontros"> <label for="encontros">Encontros</label>
+                                        <input type="checkbox" id="viagens_ocasiao" name="ocasioes_recomendacao" value="Viagens"> <label for="viagens_ocasiao">Viagens</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="question-card">
+                                <h3 class="question-title"><span class="step-number">5</span> Preferências Olfativas <i class="fas fa-flask"></i></h3>
+                                <div class="form-group">
+                                    <label>Você gosta de perfumes com cheiro mais: (escolha um ou mais)</label>
+                                    <div class="checkbox-options">
+                                        <input type="checkbox" id="doce" name="preferencia_olfativa" value="Doce"> <label for="doce">Doce</label>
+                                        <input type="checkbox" id="amadeirado" name="preferencia_olfativa" value="Amadeirado"> <label for="amadeirado">Amadeirado</label>
+                                        <input type="checkbox" id="citrico" name="preferencia_olfativa" value="Cítrico"> <label for="citrico">Cítrico</label>
+                                        <input type="checkbox" id="especiado" name="preferencia_olfativa" value="Especiado"> <label for="especiado">Especiado</label>
+                                        <input type="checkbox" id="fresco" name="preferencia_olfativa" value="Fresco"> <label for="fresco">Fresco</label>
+                                        <input type="checkbox" id="oriental" name="preferencia_olfativa" value="Oriental / marcante"> <label for="oriental">Oriental / marcante</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Qual intensidade você prefere?</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="leve" name="intensidade_perfume" value="Leve" required> <label for="leve">Leve</label>
+                                        <input type="radio" id="moderada" name="intensidade_perfume" value="Moderada"> <label for="moderada">Moderada</label>
+                                        <input type="radio" id="forte" name="intensidade_perfume" value="Forte / marcante"> <label for="forte">Forte / marcante</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="perfume-gostou">Algum perfume que você já usou e gostou? (Opcional)</label>
+                                    <input type="text" id="perfume-gostou" name="perfume_gostou" placeholder="Ex: Chanel N°5, Sauvage Dior">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="question-card">
+                                <h3 class="question-title"><span class="step-number">6</span> Informações Físicas <i class="fas fa-ruler-combined"></i></h3>
+                                <div class="form-group">
+                                    <label for="tom-pele">Tom de pele:</label>
+                                    <select id="tom-pele" name="tom_pele" required>
+                                        <option value="">Selecione</option>
+                                        <option value="Muito claro">Muito claro</option>
+                                        <option value="Claro rosado">Claro rosado</option>
+                                        <option value="Bege neutro">Bege neutro</option>
+                                        <option value="Dourado">Dourado</option>
+                                        <option value="Bronzeado">Bronzeado</option>
+                                        <option value="Moreno">Moreno</option>
+                                        <option value="Negro">Negro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo-fisico">Tipo físico (opcional):</label>
+                                    <select id="tipo-fisico" name="tipo_fisico">
+                                        <option value="">Não informar</option>
+                                        <option value="Ectomorfo">Ectomorfo (magro)</option>
+                                        <option value="Mesomorfo">Mesomorfo (musculoso)</option>
+                                        <option value="Endomorfo">Endomorfo (mais largo)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="altura">Altura (em cm):</label>
+                                    <input type="number" id="altura" name="altura" placeholder="Ex: 175">
+                                </div>
+                                <div class="form-group">
+                                    <label>Gênero:</label>
+                                    <div class="radio-options">
+                                        <input type="radio" id="masculino" name="genero" value="Masculino" required> <label for="masculino">Masculino</label>
+                                        <input type="radio" id="feminino" name="genero" value="Feminino"> <label for="feminino">Feminino</label>
+                                        <input type="radio" id="outro" name="genero" value="Outro / Prefiro não informar"> <label for="outro">Outro / Prefiro não informar</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navigation-controls">
+                        <button type="button" id="prev-btn" class="nav-button prev-button hidden"><i class="fas fa-arrow-left"></i> Anterior</button>
+                        <button type="button" id="next-btn" class="nav-button next-button">Próximo <i class="fas fa-arrow-right"></i></button>
+                        <button type="submit" id="submit-btn" class="nav-button submit-button hidden">Obter Análise <i class="fas fa-magic"></i></button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="resultados" class="results-section hidden">
+                <div class="results-header">
+                    <h2><i class="fas fa-crown"></i> Sua Análise de Estilo Completa!</h2>
+                    <p id="analise-geral-texto" class="analysis-summary"></p>
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-block">
+                        <h3 class="block-title"><i class="fas fa-hanger"></i> Looks para Você</h3>
+                        <div id="recomendacoes-looks" class="recommendation-list"></div>
+                    </div>
+
+                    <div class="result-block">
+                        <h3 class="block-title"><i class="fas fa-wine-bottle"></i> Perfumes e Aromas</h3>
+                        <div id="recomendacoes-perfumes" class="recommendation-list"></div>
+                    </div>
+
+                    <div class="result-block">
+                        <h3 class="block-title"><i class="fas fa-socks"></i> Sapatos Ideais</h3>
+                        <div id="recomendacoes-sapatos" class="recommendation-list"></div>
+                    </div>
+
+                    <div class="result-block">
+                        <h3 class="block-title"><i class="fas fa-lightbulb"></i> Dicas Essenciais</h3>
+                        <div id="dicas-gerais" class="recommendation-list"></div>
+                    </div>
+
+                    <div class="result-block full-width">
+                        <h3 class="block-title"><i class="fas fa-chart-line"></i> Seu Perfil em Gráficos</h3>
+                        <div class="chart-area">
+                            <div class="chart-container">
+                                <h4 class="chart-label">Perfil de Estilo e Olfativo</h4>
+                                <canvas id="radar-chart"></canvas>
+                            </div>
+                            <div class="chart-container">
+                                <h4 class="chart-label">Frequência de Ocasiões</h4>
+                                <canvas id="bar-chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="color-palette-block">
+                            <h4 class="chart-label">Sua Paleta de Cores</h4>
+                            <div id="color-palette-container" class="color-boxes"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="refazer-quiz" class="action-button reset-button"><i class="fas fa-redo-alt"></i> Refazer Questionário</button>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 Análise de Estilo Pessoal by Thiago Duarte. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
