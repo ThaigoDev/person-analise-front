@@ -377,6 +377,15 @@ body {
 }
 /* === FIM DA CORREÇÃO DOS GRÁFICOS === */
 
+/* ESTILO ADICIONADO PARA O CRÉDITO */
+.developer-credit {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-top: auto; /* Empurra o rodapé para o fim do container */
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #A0A0A0; /* Cor cinza sutil */
+}
 
 /* Responsividade */
 @media (max-width: 768px) {

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Estrutura das Perguntas do Formulário
     const questions = [
-        { id: 'intro', type: 'intro', title: 'Faça sua analise individual de Imagem Pessoal', description: 'Por favor, responda às próximas perguntas. Isso nos ajudará a encontrar as ferramentas de investimento mais valiosas e adequadas para você.' },
+        { id: 'intro', type: 'intro', title: 'Faça sua análise individual de imagem pessoal', description: 'Por favor, responda às próximas perguntas. Suas respostas nos ajudarão a montar uma análise de imagem e estilo perfeita para você.' },
         { id: 'describe', type: 'text', title: 'Como você se descreveria em poucas palavras?', required: true },
         { id: 'environment', type: 'radio', title: 'Você prefere ambientes...', options: ['Urbanos', 'Naturais', 'Clássicos', 'Criativos-descontraídos'], required: true },
         { id: 'personality', type: 'radio', title: 'Sua personalidade é mais:', options: ['Extrovertida', 'Introvertida', 'Equilibrada'], required: true },
